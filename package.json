@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "mocha": "^4.0.1",
-    "snapdragon-node": "^2.1.1",
     "gulp-format-md": "^1.0.0"
   },
   "keywords": [
@@ -39,6 +38,12 @@
     "tasks": [
       "readme"
     ],
+    "related": {
+      "list": [
+        "is-plain-object",
+        "kind-of"
+      ]
+    },
     "plugins": [
       "gulp-format-md"
     ],
