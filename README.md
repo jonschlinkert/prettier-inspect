@@ -22,6 +22,7 @@ Please consider following this project's author, [Jon Schlinkert](https://github
   * [Regular expressions](#regular-expressions)
   * [Strings](#strings)
   * [RegExp.exec and String.match arguments](#regexpexec-and-stringmatch-arguments)
+- [Release history](#release-history)
 - [About](#about)
 
 </details>
@@ -188,6 +189,10 @@ console.log(inspect(/foo/.exec('foo')));
 //=> [ 'foo', index: 0, input: 'foo' ]
 ```
 
+## Release history
+
+See the [changelog](changelog.md) for updates.
+
 ## About
 
 <details>
@@ -222,6 +227,13 @@ $ npm install -g verbose/verb#dev verb-generate-readme && verb
 ```
 
 </details>
+
+### Related projects
+
+You might also be interested in these projects:
+
+* [is-plain-object](https://www.npmjs.com/package/is-plain-object): Returns true if an object was created by the `Object` constructor. | [homepage](https://github.com/jonschlinkert/is-plain-object "Returns true if an object was created by the `Object` constructor.")
+* [kind-of](https://www.npmjs.com/package/kind-of): Get the native type of a value. | [homepage](https://github.com/jonschlinkert/kind-of "Get the native type of a value.")
 
 ### Author
 

@@ -1,7 +1,7 @@
 {
   "name": "prettier-inspect",
   "description": "Better inspect formatting, using prettier for arrays, objects and functions, and util.inspect for everything else.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/prettier-inspect",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/prettier-inspect",
