@@ -1,6 +1,7 @@
 {
   "name": "prettier-inspect",
-  "description": "Better inspect formatting, using prettier for arrays, objects and functions, and util.inspect for everything else.",
+  "description":
+    "Better inspect formatting, using prettier for arrays, objects and functions, and util.inspect for everything else.",
   "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/prettier-inspect",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -9,15 +10,19 @@
     "url": "https://github.com/jonschlinkert/prettier-inspect/issues"
   },
   "license": "MIT",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "main": "index.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "test": "mocha"
+    "fix:config": "prettier --ignore-path .gitignore --write \"**/*.json\"",
+    "fix:docs": "prettier --ignore-path .gitignore --write \"**/*.md\"",
+    "fix:script": "npm run test:script -- --fix",
+    "fix": "npm run fix:script && npm run fix:config && npm run fix:docs",
+    "precommit": "lint-staged",
+    "test:script": "eslint --ignore-path .gitignore \"**/*.js\"",
+    "test": "npm run test:script && mocha"
   },
   "dependencies": {
     "is-plain-object": "^2.0.4",
@@ -25,28 +30,27 @@
     "prettier": "^1.8.2"
   },
   "devDependencies": {
-    "mocha": "^4.0.1",
-    "gulp-format-md": "^1.0.0"
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint": "^4.12.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "mocha": "^4.0.1"
   },
-  "keywords": [
-    "inspect",
-    "prettier"
-  ],
+  "keywords": ["inspect", "prettier"],
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"],
+    "*.md": ["prettier --write", "git add"]
+  },
   "verb": {
     "toc": "collapsible",
     "layout": "default",
-    "tasks": [
-      "readme"
-    ],
+    "tasks": ["readme"],
     "related": {
-      "list": [
-        "is-plain-object",
-        "kind-of"
-      ]
+      "list": ["is-plain-object", "kind-of"]
     },
-    "plugins": [
-      "gulp-format-md"
-    ],
+    "plugins": ["gulp-format-md"],
     "lint": {
       "reflinks": true
     }

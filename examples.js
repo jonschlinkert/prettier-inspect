@@ -1,4 +1,4 @@
-
+/* eslint-disable  no-unused-vars */
 const inspect = require('./');
 function fn( a, b ){return a + b}
 
@@ -57,7 +57,7 @@ console.log(inspect(/foo/.exec('foo')))
 console.log(inspect(obj))
 
 
-function fn( a, b ){return a + b}
+function func( a, b ){return a + b}
 console.log(inspect([{a: 'b', c: 'd', e: 'f', fn: fn}]));
 
 console.log(inspect({
