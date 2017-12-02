@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 function fn( a, b ){return a + b}
 
 module.exports = {
