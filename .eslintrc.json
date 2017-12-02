@@ -85,11 +85,6 @@
     "no-useless-call": 0,
     "no-with": 2,
     "one-var": [0, {"initialized": "never"}],
-    "operator-linebreak": [
-      0,
-      "after",
-      {"overrides": {"?": "before", ":": "before"}}
-    ],
     "padded-blocks": [0, "never"],
     "radix": 2,
     "use-isnan": 2,
